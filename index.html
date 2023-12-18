@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- https://github.com/SamuelCesarr/monTP2 -->
+
+<body>
+    <header>
+        <h1>Mon profil VALORANT</h1>
+        <div id="logo1">
+        <img src="images/logovalorant.png" alt="logo VALORANT">
+        </div>
+        <div id="logo2">
+        <img src="images/logo americas.png" alt="logo vct americas">
+        </div>
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#inscriptionh2">Inscription</a>
+            <a href="#tableau">Tableau</a>
+            <a href="#article">Article</a>
+            <a href="#video">Vidéo</a>
+            <a href="#galerie">Galerie</a>
+            <a href="#contacts">Contacts</a>
+        </nav>
+    </header>
+    <div id="accueil">
+        <h2>Accueil</h2> <br>
+        <h3>TP2</h3>
+        <h3>Mon profil VALORANT</h3>
+        <h3>Samuel César</h3>
+        <h3>582-1W1 – Mise en page Web</h3>
+        <h3>Techniques d’Intégration Multimédia</h3>
+        <h3>Collège de Maisonneuve</h3>
+        <h3>https://github.com/SamuelCesarr/monTP2</h3>
+        <h3>Automne 2023</h3>
+    </div>
+
+    <div id="inscriptionh2">
+    <h2>Pour mieux vous connaitre</h2> <br>
+    </div>
+    <div id="inscription">
+        <form action="traiter_form.php">
+            <label for="agent">Agent préféré: </label>
+            <input type="text" id="agent" name="agent"> <br>
+        </form>
+
+        <form action="traiter_form.php"> 
+            <label for="carte">Carte préférée: </label> 
+            <select name="carte" id="carte">
+                <option value="ascent">Ascent</option>
+                <option value="bind">Bind</option>
+                <option value="breeze">Breeze</option>
+                <option value="fracture">Fracture</option>
+                <option value="haven">Haven</option>
+                <option value="icebox">Icebox</option>
+                <option value="lotus">Lotus</option>
+                <option value="pearl">Pearl</option>
+                <option value="split">Split</option>
+                <option value="sunset">Sunset</option>
+            </select> <br>
+        </form>
+
+        <form action="traiter_form.php"> 
+            <p>Quel est votre rang?</p> <br>
+            <input type="radio" id="rang" name="rang" value="Non-classé/Fer">
+            <label for="rang">Non-classé/Fer</label> <br>
+            <input type="radio" id="rang" name="rang" value="Bronze/Argent">
+            <label for="rang">Bronze/Argent</label> <br>
+            <input type="radio" id="rang" name="rang" value="Or/Platine">
+            <label for="rang">Or/Platine</label> <br>
+            <input type="radio" id="rang" name="rang" value="Diamant/Ascendant">
+            <label for="rang">Diamant/Ascendant</label> <br>
+            <input type="radio" id="rang" name="rang" value="Immortel/Radiant">
+            <label for="rang">Immortel/Radiant</label>
+        </form>
+        
+        <form action="traiter_form.php"> 
+            <p>Quelles équipes d'esport connaissez-vous?</p> <br>
+            <input type="checkbox" id="equipe" name="equipe" value="100t">
+            <label for="100t">100 Thieves</label> <br>
+            <input type="checkbox" id="equipe" name="equipe" value="c9">
+            <label for="c9">Cloud 9</label> <br>
+            <input type="checkbox" id="equipe" name="equipe" value="eg">
+            <label for="eg">Evil Geniuses</label> <br>
+            <input type="checkbox" id="equipe" name="equipe" value="furia">
+            <label for="furia">FURIA</label> <br>
+            <input type="checkbox" id="equipe" name="equipe" value="g2">
+            <label for="g2">G2 Esports</label> <br>
+            <input type="checkbox" id="equipe" name="equipe" value="kru">
+            <label for="kru">KRÜ Esports</label> <br>
+            <input type="checkbox" id="equipe" name="equipe" value="lev">
+            <label for="lev">Leviatán</label> <br>
+            <input type="checkbox" id="equipe" name="equipe" value="loud">
+            <label for="loud">LOUD</label> <br>
+            <input type="checkbox" id="equipe" name="equipe" value="mibr">
+            <label for="mibr">Made in Brazil (MIBR)</label> <br>
+            <input type="checkbox" id="equipe" name="equipe" value="nrg">
+            <label for="nrg">NRG Esports</label> <br>
+            <input type="checkbox" id="equipe" name="equipe" value="sen">
+            <label for="sen">Sentinels</label> <br>
+            <input type="checkbox" id="equipe" name="equipe" value="aucune">
+            <label for="aucune">Aucune</label> <br>
+        
+
+            <input id="bouton_submit" type="submit" value="Soumettre">
+            <input type="reset" value="Annuler">
+        </form>
+    </div>
+    <div id="tableau">
+    <table>
+        <caption>Mes meilleurs agents</caption>
+        <tr>
+            <th>Agent</th>
+            <th>Heures jouées</th>
+            <th>Pourcentage de victoire</th>
+            <th>KDR</th>
+            <th>Meilleure partie</th>
+        </tr>
+        <tr>
+            <td>Breach</td>
+            <td>98</td>
+            <td>53.9%</td>
+            <td>0.96</td>
+            <td>35 frags</td>
+        </tr>
+        <tr>
+            <td>Chamber</td>
+            <td>95</td>
+            <td>49.1%</td>
+            <td>0.96</td>
+            <td>27 frags</td>
+        </tr>
+        <tr>
+            <td>Cypher</td>
+            <td>84</td>
+            <td>57.6%</td>
+            <td>1.03</td>
+            <td>34 frags</td>
+        </tr>
+        <tr>
+            <td>Jett</td>
+            <td>79</td>
+            <td>44.8%</td>
+            <td>1.06</td>
+            <td>34 frags</td>
+        </tr>
+        <tr>
+            <td>Omen</td>
+            <td>73</td>
+            <td>45.6%</td>
+            <td>0.90</td>
+            <td>36 frags</td>
+        </tr>
+    </table>
+    </div>
+    <div id="titresarticle">
+    <h2>Valorant Champions 2023</h2> <br>
+    <h3>Un évènement mémorable</h3> <br>
+    </div>
+    <div id="article">
+        
+        <div id="paragraphe">
+        <p>Le plus gros évènement à avoir eu lieu dans VALORANT jusqu'à présent c'est déroulé en Aout 2023 à Los Angeles. Valorant Champions 2023 a rassemblé 16 équipes des 4 coins du monde, venant des Amériques, de l'Europe, de l'Asie Pacifique ainsi que de la Chine. L'évènement à débuté par une phase de groupes dans laquelle 4 équipes jouent pour se qualifier pour les séries éliminatoires, où 2 équipes par groupe en sortiront.</p> <br>
+
+        <figure>
+        <img src="images/arena.png" alt="Arène de compétition">
+        <figcaption>L'arène ou se déroule l'action</figcaption>
+        </figure>
+        
+        <br><p>L'évènement a commencé le 6 aout 2023 avec 2 parties se déroulant dans le groupe D, un groupe que les gens appelaient le "Group of Death" (groupe de la mort), ce qui est normalement lorsque plusieurs équipes fortes se retrouvent dans le même groupe. Cependant, le groupe D était appelé le "Group of Disappointment" (groupe de la déception) par plusieurs personnes puisque les équipes dans ce groupe étaient plutôt fortes au début de l'année mais ont déçu beaucoup de gens avec leurs performances assez médiocres aux évènements menant à celui-ci. À la surprise des fans de ces équipes, il semblerait qu'elles étaient retournées au niveau qu'elles étaient plus tôt dans l'année et le tournoi a donc débuté sur une bonne note.</p>
+        </div>
+
+        <div id="paragraphe">
+        <figure>
+        <img src="images/Valorant-Champions-Playoff-Bracket.jpg" alt="Tableau séries éliminatoires du tournoi">
+        <figcaption>Tableau des séries éliminatoires</figcaption>
+        </figure>
+
+        <br><p>Les résultats des groupes sont les suivants: Paper Rex et EDward Gaming se sont qualifiés du groupe A après des parties divertissantes, Evil Geniuses et FUT Esports du groupe B en sont sortis avec aise, FNATIC et Bilibili Gaming du Groupe C, la première étant attendue de tous et la dernière surprenant la plupart en battant NRG esports 2 fois, et DRX et LOUD sortirent vainqueurs du groupe D après de dures et longues parties.</p>
+        <p>Nous arrivons donc aux séries éliminatoires avec ces 8 équipes placées dans un tableau de double élimniation.FNATIC vs LOUD était une partie qui était bien attendue par beaucoup de fans, notamment puisque FNATIC ont battu LOUD au premier tournoi de l'année dans une série extrêmement proche. Les Brésiliens étaient donc bien résolus à prendre leur revanche et cette résolution a porté ses fruits, l'emportant 2-0 contre les favoris. Paper Rex, DRX et Evil Geniuses gagnent leur série aisément comme la plupart s'y attendait. Europe vs Europe et Chine vs Chine dans la partie inférieure du tableau et aucune surprise lorsque FNATIC et EDward Gaming remportent leurs parties.</p>
+        </div>
+
+        <div id="paragraphe">
+        <p>Dans une série ardue contre LOUD, Paper Rex se font un chemin vers les finales supérieures tandis que Evil Geniuses se débarassent de DRX avec peu de difficulté. Ces derniers vont donc devoir affronter FNATIC dans la partie inférieure. Ils commencent bien en remportant la première partie 13-1 mais se font tout de même vaincre en perdant les deux autres cartes. LOUD mettrent un arrêt à l'élan d'EDward Gaming pour aller rejoindre FNATIC une fois de plus pour pouvoir se qualifier aux finales inférieures. FNATIC ne seront pas capables de prendre leur revanche à leur tour et LOUD l'emportent 2-1 se donnant droit de passage pour les finales inférieures.</p>
+        <p>Paper Rex et Evil Geniuses s'affrontent donc dans les finales supérieures et après une longue série et des parties très proches Paper Rex remportent leur ticket pour les grandes finales. Evil Geniuses se retouvent donc face-à-face avec les champions de la ligue des Amériques dans les finales inférieures. Ils ne veulent décidemment pas répéter l'humiliation qu'ils ont subie lors de la saison régulière et Evil Geniuses ne permettent pas à LOUD de les finir si proche du but. Résultat: 3-2 Evil Geniuses. Le moment tant attendu est arrivé, les grandes finales mettant en vedette Paper Rex et Evil Geniuses. Une année remplie de rebondissements pour ces 2 équipes se termine ici. Avec une arène remplie de plus de 11 000 spectateurs et un grand prix de 1 million de dollars, Evil Geniuses remportent le tout 3-1 et marquent l'histoire de VALORANT.</p> <br>
+        <figure>
+        <img src="images/Evil-Geniuses-Valorant-Champions-2023-trophy.avif" alt="Champions du tournoi">
+        <figcaption>Evil Geniuses remportent le trophée</figcaption>
+        </figure>
+        </div>
+    </div>
+
+    <div id="video">
+        <h2>Parcours des champions</h2> <br>
+        <p>La vidéo montre les points forts de l'évènement en illustrant les moments les plus impressionants des joueurs ainsi que d'incroyable histoires grâce au talent des commentateurs sportifs qui donnent leur âme à faire le commentaire des parties remplies de hauts et de bas pour les équipes venant des quatres coins du monde avec la détermination de montrer à tous qu'ils sont les meilleurs.</p> <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-4z43hDK9bk?si=sR8et7yr0uhHGZa9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <h2>Galerie avec les logos des équipes</h2> <br>
+
+    <div id="galerie">
+        <div id="row">
+        <img src="images/eg.png" alt="Logo Evil Geniuses">
+        <img src="images/prx.png" alt="Logo Paper Rex">
+        <img src="images/loud.png" alt="Logo LOUD">
+        <img src="images/fnc.png" alt="Logo Fnatic">
+        </div>
+        <div id="row">
+        <img src="images/drx.png" alt="Logo DRX">
+        <img src="images/edg.png" alt="Logo EDward Gaming">
+        <img src="images/blg.png" alt="Logo Bilibili Gaming">
+        <img src="images/fut.png" alt="Logo FUT Esports">
+        </div>
+        <div id="row">
+        <img src="images/nrg.png" alt="Logo NRG Esports">
+        <img src="images/gia.png" alt="Logo Giants Gaming">
+        <img src="images/t1.png" alt="Logo T1">
+        <img src="images/navi.png" alt="Logo Natus Vincere">
+        </div>
+        <div id="row">
+        <img src="images/kru.png" alt="Logo KRÜ Esports">
+        <img src="images/fpx.png" alt="Logo FunPlus Phoenix">
+        <img src="images/zeta.png" alt="Logo ZETA DIVISION">
+        <img src="images/tl.png" alt="Logo Team Liquid">
+        </div>
+    </div>
+
+    <footer id="contacts">
+        <p>3800 Sherbrooke St E, Montreal, Quebec H1X 2A2
+        </p>
+        <p>https://www.vlr.gg/event/1657/valorant-champions-2023/group-stage
+        </p>
+        <p>Technique d’Intégration Multimédia
+        </p>
+        Twitter <ion-icon name="logo-twitter"></ion-icon>
+        Instagram <ion-icon name="logo-instagram"></ion-icon>
+        Discord <ion-icon name="logo-discord"></ion-icon>
+        Facebook <ion-icon name="logo-facebook"></ion-icon>
+        <p>Avis de confidentialité | Privacy Notice</p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
